@@ -1,0 +1,7 @@
+Character Manager
+
+Planet Generator/Manager
+
+Trade Generator/Manager
+
+Combat Manager/Simulator

@@ -1,0 +1,38 @@
+Planet Generator/Manager
+- Most immediately I need a UPP generator for planets using my parameters.
+
+Maximum TL 11/10
+Population levels way lower depending on sector
+
+Planet Characteristics
+Size
+- 0 through A (2D-2)
+- Small populations on worlds smaller than 5
+- Worlds of 0 or 1 are asteroids, orbital complexes, or space stations. Automatic Atmosphere of 0
+- Low gravity for worlds size 6 or lower.  High gravity for worlds 10.
+
+Atmosphere
+- traveller rules is 2D-7 + Planet Size
+- thinking about house ruling to random 0 through 15
+- maybe think about weighed random depending on planet size.
+- Size 0 or 1: Always Atmosphere 0.
+
+Hydrographics
+- traveller rules is 2D-7 + Atmosphere
+- thinking about houseruling to random 0 through 10
+- Size 0 or 1: Always Hydrographic 0
+- Atmosphere 0, 1, A, B: DM-4
+
+Temperature
+- Not part of UPP, but can now be calculated randomly if desired.
+- 2D with various DMs depending on atmosphere.
+
+Population
+- traveller rules 2D-2
+- Once we have population and the previous states, trade codes can be calculated.
+
+Government
+Law level
+Technology level
+Startport
+Bases
