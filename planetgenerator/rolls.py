@@ -1,9 +1,10 @@
 import random
 
+def one_dee_six():
+    return random.randint(1,6)
+
 def sum_two_dee_six():
-    dice_one = random.randint(1,6)
-    dice_two = random.randint(1,6)
-    return dice_one + dice_two
+    return one_dee_six() + one_dee_six()
 
 def roll_size():
     return sum_two_dee_six() - 2
@@ -46,9 +47,7 @@ def roll_hydrographics(planet_size, planet_atmosphere):
         else:
             return number
 
-
 def roll_temperature(planet_atmosphere):
-
     if (planet_atmosphere == 0 or planet_atmosphere == 1):
         return "Wildly Variable"
     elif (planet_atmosphere == 2 or planet_atmosphere == 3):
@@ -64,5 +63,8 @@ def roll_temperature(planet_atmosphere):
     else:
         return sum_two_dee_six() + 6
 
-def roll_population():
-    pass
+def roll_population(planet_size, planet_atmosphere):
+    if (planet_size == 7 or planet_size == 8 or planet_size == 9) and (planet_atmosphere == 6):
+        return random.randint(5,7)
+    else:
+        return random.randint(0,5)
