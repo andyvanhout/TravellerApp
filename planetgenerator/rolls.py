@@ -64,7 +64,17 @@ def roll_temperature(planet_atmosphere):
         return sum_two_dee_six() + 6
 
 def roll_population(planet_size, planet_atmosphere):
-    if (planet_size == 7 or planet_size == 8 or planet_size == 9) and (planet_atmosphere == 6):
-        return random.randint(5,7)
+    if (planet_size == 6 or planet_size == 7 or planet_size == 8 or planet_size == 9) and (planet_atmosphere == 6):
+        return random.randint(6,7)
     else:
         return random.randint(0,5)
+
+def roll_government(planet_population):
+    if (planet_population == 0):
+        return 0
+    else:
+        govresult = sum_two_dee_six() + planet_population - 7
+        if govresult < 0:
+            return 0
+        else:
+            return govresult
