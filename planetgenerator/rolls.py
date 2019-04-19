@@ -1,5 +1,19 @@
 import random
 
+def numbers_to_letters(number):
+    if number == 10:
+        return "A"
+    if number == 11:
+        return "B"
+    if number == 12:
+        return "C"
+    if number == 13:
+        return "D"
+    if number == 14:
+        return "E"
+    if number == 15:
+        return "F"
+
 def one_dee_six():
     return random.randint(1,6)
 
@@ -7,10 +21,15 @@ def sum_two_dee_six():
     return one_dee_six() + one_dee_six()
 
 def roll_size():
-    return sum_two_dee_six() - 2
+    size_result = sum_two_dee_six() - 2
+    if size_result == 10:
+        return "A"
+    else:
+        return size_result
 
 def roll_atmosphere(planet_size):
-    
+    if planet_size == "A":
+        planet_size = 10
     unusual_chance = random.randint(0,100)
     
     if (planet_size == 0 or planet_size == 1):
@@ -23,24 +42,15 @@ def roll_atmosphere(planet_size):
             return 0
         elif number > 15:
             return "F"
-        elif (number > 9):
-            if (number == 10):
-                return "A"
-            elif (number == 11):
-                return "B"
-            elif (number == 12):
-                return "C"
-            elif (number == 13):
-                return "D"
-            elif (number == 14):
-                return "E"
-            elif (number == 15):
-                return "F"
+        elif (number >= 10):
+            return numbers_to_letters(number)
         else:
             return number
         
 
 def roll_hydrographics(planet_size, planet_atmosphere):
+    if (planet_size == "A"):
+        planet_size = 10
     if (planet_atmosphere == "A"):
         planet_atmosphere = 10
     if (planet_atmosphere == "B"):
@@ -60,7 +70,7 @@ def roll_hydrographics(planet_size, planet_atmosphere):
         number = sum_two_dee_six() - 11 + planet_atmosphere
         if number < 0:
             return 0
-        elif number > 10:
+        elif number > 9:
             return "A"
         else:
             return number
@@ -68,8 +78,8 @@ def roll_hydrographics(planet_size, planet_atmosphere):
         number = (sum_two_dee_six() - 7 + planet_atmosphere)
         if number < 0:
             return 0
-        elif number > 10:
-            return 10
+        elif number >= 10:
+            return "A"
         else:
             return number
 
@@ -99,13 +109,28 @@ def roll_government(planet_population):
     if (planet_population == 0):
         return 0
     else:
-        govresult = sum_two_dee_six() + planet_population - 4
-        if govresult < 0:
+        gov_result = sum_two_dee_six() + planet_population - 4
+        if gov_result < 0:
             return 0
+        elif (gov_result >= 10):
+            return numbers_to_letters(gov_result)
         else:
-            return govresult
+            return gov_result
 
 def roll_law_level(planet_government):
+    if (planet_government == "A"):
+        planet_government = 10
+    if (planet_government == "B"):
+        planet_government = 11
+    if planet_government == "C":
+        planet_government = 12
+    if planet_government == "D":
+        planet_government = 13
+    if planet_government == "E":
+        planet_government = 14
+    if planet_government == "F":
+        planet_government = 15
+    
     if (planet_government == 0):
         return 0
     else:

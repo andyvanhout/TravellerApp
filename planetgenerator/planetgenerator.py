@@ -38,7 +38,7 @@ def print_new_planets():
     newplanet = TravellerPlanet(rr['size'], rr['atmosphere'], rr['hydrographics'], rr['population'],
     rr['government'], rr['law_level'], rr['tech_level'], rr['starport'] )
 
-    printout = f"{newplanet.size},{newplanet.atmosphere},{newplanet.hydrographics},{newplanet.population},{newplanet.government},{newplanet.law_level},{newplanet.starport},{newplanet.tech_level}"
+    printout = f"{newplanet.size}{newplanet.atmosphere}{newplanet.hydrographics}{newplanet.population}{newplanet.government}{newplanet.law_level}{newplanet.starport}-{newplanet.tech_level}"
     print (printout)
 
 
