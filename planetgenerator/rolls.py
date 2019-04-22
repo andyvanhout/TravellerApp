@@ -3,16 +3,36 @@ import random
 def numbers_to_letters(number):
     if number == 10:
         return "A"
-    if number == 11:
+    elif number == 11:
         return "B"
-    if number == 12:
+    elif number == 12:
         return "C"
-    if number == 13:
+    elif number == 13:
         return "D"
-    if number == 14:
+    elif number == 14:
         return "E"
-    if number == 15:
+    elif number == 15:
         return "F"
+    elif number > 15:
+        return "F"
+    else:
+        return number
+
+def letters_to_numbers(letter):
+    if (letter == "A"):
+        return 10
+    elif (letter == "B"):
+        return 11
+    elif letter == "C":
+        return 12
+    elif letter == "D":
+        return 13
+    elif letter == "E":
+        return 14
+    elif letter == "F":
+        return 15
+    else:
+        return letter
 
 def one_dee_six():
     return random.randint(1,6)
@@ -28,8 +48,7 @@ def roll_size():
         return size_result
 
 def roll_atmosphere(planet_size):
-    if planet_size == "A":
-        planet_size = 10
+    planet_size = letters_to_numbers(planet_size)
     unusual_chance = random.randint(0,100)
     
     if (planet_size == 0 or planet_size == 1):
@@ -49,20 +68,8 @@ def roll_atmosphere(planet_size):
         
 
 def roll_hydrographics(planet_size, planet_atmosphere):
-    if (planet_size == "A"):
-        planet_size = 10
-    if (planet_atmosphere == "A"):
-        planet_atmosphere = 10
-    if (planet_atmosphere == "B"):
-        planet_atmosphere = 11
-    if planet_atmosphere == "C":
-        planet_atmosphere = 12
-    if planet_atmosphere == "D":
-        planet_atmosphere = 13
-    if planet_atmosphere == "E":
-        planet_atmosphere = 14
-    if planet_atmosphere == "F":
-        planet_atmosphere = 15
+    planet_size = letters_to_numbers(planet_size)
+    planet_atmosphere = letters_to_numbers(planet_atmosphere)
 
     if (planet_size == 0 or planet_size == 1):
         return 0
@@ -118,18 +125,7 @@ def roll_government(planet_population):
             return gov_result
 
 def roll_law_level(planet_government):
-    if (planet_government == "A"):
-        planet_government = 10
-    if (planet_government == "B"):
-        planet_government = 11
-    if planet_government == "C":
-        planet_government = 12
-    if planet_government == "D":
-        planet_government = 13
-    if planet_government == "E":
-        planet_government = 14
-    if planet_government == "F":
-        planet_government = 15
+    planet_government = letters_to_numbers(planet_government)
     
     if (planet_government == 0):
         return 0
