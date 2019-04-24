@@ -58,6 +58,6 @@ def print_new_planets():
         print(printout, file=text_file)
     print(printout)
 
-for x in range(191):
+for x in range(200):
     print_new_planets()
 
