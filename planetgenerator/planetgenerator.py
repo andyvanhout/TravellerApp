@@ -1,4 +1,5 @@
 import rolls
+import tradecodes
 
 # rolled_temperature = rolls.roll_temperature(rolled_atmosphere)
 
@@ -36,15 +37,27 @@ def print_new_planets():
     rr = roll_planet()
 
     newplanet = TravellerPlanet(rr['starport'], rr['size'], rr['atmosphere'], rr['hydrographics'], rr['population'],
-    rr['government'], rr['law_level'], rr['tech_level'] )
+    rr['government'], rr['law_level'], rr['tech_level'])
 
-    printout = f"{newplanet.starport}{newplanet.size}{newplanet.atmosphere}{newplanet.hydrographics}{newplanet.population}{newplanet.government}{newplanet.law_level}-{newplanet.tech_level}"
+    converted_size = rolls.letters_to_numbers(newplanet.size)
+    converted_atmosphere = rolls.letters_to_numbers(newplanet.atmosphere)
+    converted_hydrographics = rolls.letters_to_numbers(newplanet.hydrographics)
+    converted_population = rolls.letters_to_numbers(newplanet.population)
+    converted_government = rolls.letters_to_numbers(newplanet.government)
+    converted_law_level = rolls.letters_to_numbers(newplanet.law_level)
+    converted_tech_level = rolls.letters_to_numbers(newplanet.tech_level)
+
+    planet_trade_list = tradecodes.calculate_trade_codes(converted_size, converted_atmosphere, converted_hydrographics,
+    converted_population, converted_government, converted_law_level, converted_tech_level)
+
+    planet_trade_codes = " ".join(planet_trade_list)
+    printout = f"""{newplanet.starport}{newplanet.size}{newplanet.atmosphere}{newplanet.hydrographics}\
+{newplanet.population}{newplanet.government}{newplanet.law_level}-{newplanet.tech_level} """ + "| " + planet_trade_codes
     
-    print("Writing to output.txt:")
     with open("output.txt", "a") as text_file:
         print(printout, file=text_file)
-    print("Write complete")
+    print(printout)
 
-for x in range (20):
+for x in range(191):
     print_new_planets()
 
