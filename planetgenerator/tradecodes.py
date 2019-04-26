@@ -18,7 +18,7 @@ def calculate_trade_codes(size, atmosphere, hydro, population, government, law_l
         trade_codes.append("Ht")
     if (atmosphere == 0 or atmosphere == 1) and (hydro >= 1):
         trade_codes.append("Ie")
-    if (atmosphere >= 0 and atmosphere <= 2 or atmosphere == 4 or atmosphere == 7 or atmosphere == 9) and (population >= 7):
+    if (atmosphere >= 0 and atmosphere <= 2 or atmosphere == 4 or atmosphere == 7 or atmosphere == 9) and (population >= 6):
         trade_codes.append("In")
     if (population > 0 and population <= 3):
         trade_codes.append("Lo")

@@ -110,7 +110,7 @@ def roll_population(planet_size, planet_atmosphere):
     if (planet_size == 6 or planet_size == 7 or planet_size == 8 or planet_size == 9) and (planet_atmosphere == 6):
         return random.randint(6,7)
     else:
-        return random.randint(0,5)
+        return random.randint(0,6)
 
 def roll_government(planet_population):
     if (planet_population == 0):
