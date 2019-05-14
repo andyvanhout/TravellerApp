@@ -18,7 +18,7 @@ def combine_dee_six(number):
 def goods_available():
     random_goods = sum_roll_dee_six(1)
     print(f'This supplier has {random_goods} available. They are:')
-    for i in range(random_goods):
+    for x in range(random_goods):
         random_item = combine_dee_six(2)
         print(f'Item {random_item}')
 
