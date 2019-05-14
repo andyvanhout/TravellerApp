@@ -1,5 +1,5 @@
-import rolls
-import tradecodes
+import modules.rolls as rolls
+import modules.tradecodes as tradecodes
 
 # rolled_temperature = rolls.roll_temperature(rolled_atmosphere)
 
