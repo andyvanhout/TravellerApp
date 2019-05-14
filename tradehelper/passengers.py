@@ -1,4 +1,4 @@
-import passage
+import modules.passage as passage
 
 def steward_skill():
     print("Input highest Steward skill on ship")

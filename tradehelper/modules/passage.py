@@ -1,4 +1,4 @@
-import traffic
+import modules.traffic as traffic 
 
 def highpassage(steward_skill, population_modifier, starport_modifier, amber_modifier, red_modifier):
     dice_modifier = steward_skill + population_modifier + starport_modifier + amber_modifier + red_modifier - 4 #minus four for high passage

@@ -1,4 +1,4 @@
-import traffic
+import modules.traffic as traffic
 
 def major_cargo(skill_effect, population_modifier, starport_modifier, tech_level, amber_modifier, red_modifier):
     dice_modifier = skill_effect + population_modifier + starport_modifier + tech_level + amber_modifier + red_modifier - 4 #minus four for major cargo

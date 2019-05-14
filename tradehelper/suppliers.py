@@ -24,5 +24,5 @@ def goods_available():
 
 goods_available()
 
-#bedtime thoughts... I could return a string for goods_available, and then set up a data dict with each D66 roll for each good,
+#bedtime thoughts... I could return a string for goods_available, and then set up a dict with each D66 roll for each good,
 #which would allow me to return what actual good is returned.

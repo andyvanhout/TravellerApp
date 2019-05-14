@@ -1,4 +1,4 @@
-import cargo
+import modules.cargo as cargo
 
 def skill_effect():
     print("Input the effect of Streetwise or Steward Check")
