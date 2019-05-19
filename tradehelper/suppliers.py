@@ -18,11 +18,24 @@ def combine_dee_six(number):
 
 def goods_available():
     trade_codes = input("Input Trade Codes: ")
-    print(trade_codes)
+    trade_code_list = trade_codes.split(' ')
+    trade_set = []
+    
+    for code in trade_code_list: 
+        trade_set.extend(tg.trade_codes[code])
+    trade_list = []
+    for key in set(trade_set):
+        trade_list.append(tg.trade_goods[key])
+    trade_list.sort()
+    for item in trade_list:
+        print(item)
+
+def random_goods():
     random_goods = sum_roll_dee_six(1)
-    print(f'This supplier has {random_goods} available. They are:')
-    for x in range(random_goods):
+    print(f'\nThis supplier has {random_goods} available. They are:')
+    for number in range(random_goods):
         random_item = combine_dee_six(2)
-        print(f'Item {random_item}')
+        print(tg.trade_goods[str(random_item)])
 
 goods_available()
+random_goods()
