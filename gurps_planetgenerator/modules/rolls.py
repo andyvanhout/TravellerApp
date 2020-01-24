@@ -1,60 +1,20 @@
 import random
 
-""" def numbers_to_letters(number):
-    if number == 10:
-        return "A"
-    elif number == 11:
-        return "B"
-    elif number == 12:
-        return "C"
-    elif number == 13:
-        return "D"
-    elif number == 14:
-        return "E"
-    elif number == 15:
-        return "F"
-    elif number > 15:
-        return "F"
-    else:
-        return number
-
-def letters_to_numbers(letter):
-    if (letter == "A"):
-        return 10
-    elif (letter == "B"):
-        return 11
-    elif letter == "C":
-        return 12
-    elif letter == "D":
-        return 13
-    elif letter == "E":
-        return 14
-    elif letter == "F":
-        return 15
-    else:
-        return letter """
-
 def one_dee_six():
     return random.randint(1,6)
 
-def sum_two_dee_six():
-    return one_dee_six() + one_dee_six()
-
-def sum_three_dee_six():
-    return one_dee_six() + one_dee_six() + one_dee_six()
-
-def sum_four_dee_six():
-    four_dee_six = one_dee_six() + one_dee_six() + one_dee_six() + one_dee_six()
-    return four_dee_six
-
+def roll_dee_six(number):
+    diceroll = 0
+    for i in range(number):
+        diceroll += one_dee_six()
+    return diceroll
 
 def roll_type():
-    type_result = sum_four_dee_six()
-    print(type_result)
+    type_result = roll_dee_six(4)
     if type_result <= 7:
         return ["Asteroid Belt", "-"]
     elif (type_result == 8 or type_result == 9):
-        barren_result = sum_three_dee_six()
+        barren_result = roll_dee_six(3)
         if barren_result <= 12:
             return ["Barren (Rock)", "-"]
         else:
@@ -70,7 +30,7 @@ def roll_type():
     elif (type_result == 17 or type_result == 18):
         return ["Garden", "Dense"]
     elif (type_result >= 19 and type_result <= 21):
-        hostile_result = sum_three_dee_six()
+        hostile_result = roll_dee_six(3)
         if (hostile_result == 3 or hostile_result == 4):
             return ["Subgiant", ""]
         elif (hostile_result == 5 or hostile_result == 6):
@@ -84,13 +44,24 @@ def roll_type():
     else:
         return ["Garden", "Very Dense"]
 
+
+
+
 def roll_size(planet_type):
     if planet_type == "Asteroid Belt":
         return "None"
     elif planet_type == "Barren (Ice)":
-        size_result = sum_three_dee_six()
+        size_result = roll_dee_six(3)
         if size_result <= 8:
-            density_result = sum_three_dee_six() - 4
+            pass
+        elif (size_result >= 9 and size_result <= 12):
+            pass
+        elif (size_result == 13 or size_result == 14):
+            pass
+        elif (size_result == 15 or size_result == 16):
+            pass
+        else:
+            pass
             
 
 
@@ -247,5 +218,3 @@ def roll_tech_level(rolled_population, rolled_atmosphere):
             return result
     elif (rolled_population == 6 or rolled_population == 7):
         return "A" """
-for i in range(40):
-    print(roll_type())
