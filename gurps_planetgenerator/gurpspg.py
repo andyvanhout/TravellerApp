@@ -2,31 +2,22 @@ import random
 
 import modules.rolls as rolls
 
-
-""" class TravellerPlanet(object):
-    def __init__(self, starport, planet_type, size, density, gravity, atmosphere, hydrographics, climate,
-     population, government, law_level, tech_level):
-        self.starport = starport
-        self.type = planet_type
-        self.size = size
-        self.density = density
-        self.gravity = gravity
-        self.atmosphere = atmosphere
-        self.hydrographics = hydrographics
-        self.climate = climate
-        self.population = population
-        self.government = government
-        self.law_level = law_level
-        self.tech_level = tech_level """
-
 def roll_planet():
-    rolled_planet_type = rolls.roll_type()
-    rolled_size = rolls.roll_size(rolled_planet_type[0], rolled_planet_type[1])
-    printout = rolled_planet_type + rolled_size
+    rolled_planet_type = rolls.planet_type()
+    rolled_size = rolls.size(rolled_planet_type['type'], rolled_planet_type['atmosphere'])
+    rolled_atmosphere = rolls.atmosphere_type(rolled_planet_type['type'])
+    if rolled_planet_type['atmosphere'] == '':
+        rolled_planet_type['atmosphere'] = rolled_atmosphere
+    elif rolled_atmosphere == '':
+        pass
+    else:
+        rolled_planet_type['atmosphere'] += ' ' + rolled_atmosphere
+    rolled_hydrosphere = rolls.hydrographics(rolled_planet_type['type'])
 
+    combined_properties = {**rolled_planet_type, **rolled_size, **rolled_hydrosphere}
     with open("output.txt", "a") as text_file:
-        print(printout, file=text_file)
-    print(printout)
+        print(combined_properties, file=text_file)
+    print(combined_properties)
 
-for x in range(50):
+for x in range(500):
     roll_planet()

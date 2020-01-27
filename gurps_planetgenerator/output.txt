@@ -1,50 +1,500 @@
-['Garden', 'Standard', 7000, 0.9, 0.79]
-['Garden', 'Standard', 6500, 0.8, 0.66]
-['Garden', 'Thin', 7000, 1.0, 0.88]
-['Garden', 'Dense', 7500, 1.0, 0.95]
-['Pre-Garden', '', 7000, 0.9, 0.79]
-['Garden', 'Standard', 7500, 1.0, 0.95]
-['Garden', 'Very Dense', 8000, 1.1, 1.11]
-['Garden', 'Dense', 8000, 0.9, 0.91]
-['Garden', 'Standard', 6000, 0.9, 0.68]
-['Garden', 'Thin', 6000, 1.0, 0.76]
-['Garden', 'Dense', 7500, 0.9, 0.85]
-['Garden', 'Very Thin', 5500, 1.1, 0.76]
-['Garden', 'Thin', 7000, 1.1, 0.97]
-['Garden', 'Standard', 6000, 1.0, 0.76]
-['Desert (Rock)', '', 4000, 0.9, 0.45]
-['Garden', 'Dense', 8000, 0.9, 0.91]
-['Garden', 'Very Thin', 6000, 0.9, 0.68]
-['Desert (Rock)', '', 4000, 0.8, 0.4]
-['Garden', 'Dense', 8000, 0.9, 0.91]
-['Garden', 'Standard', 6500, 1.0, 0.82]
-['Garden', 'Standard', 6000, 0.8, 0.61]
-['Desert (Rock)', '', 5000, 0.6, 0.38]
-['Desert (Rock)', '', 4000, 0.8, 0.4]
-['Garden', 'Standard', 6500, 0.9, 0.74]
-['Garden', 'Very Thin', 5000, 1.2, 0.76]
-['Garden', 'Standard', 6000, 0.9, 0.68]
-['Garden', 'Dense', 7000, 1.0, 0.88]
-['Pre-Garden', '', 5500, 0.9, 0.62]
-['Barren (Ice)', '-', 1500, 0.5, 0.09]
-['Garden', 'Very Thin', 4500, 1.2, 0.68]
-['Barren (Rock)', '-', 1000, 0.6, 0.08]
-['Garden', 'Standard', 7500, 0.9, 0.85]
-['Garden', 'Thin', 6000, 0.9, 0.68]
-['Garden', 'Standard', 7500, 0.9, 0.85]
-['Garden', 'Standard', 8000, 0.8, 0.81]
-['Garden', 'Very Thin', 5000, 1.2, 0.76]
-['Garden', 'Thin', 6000, 1.0, 0.76]
-['Barren (Rock)', '-', 1000, 0.6, 0.08]
-['Pre-Garden', '', 7000, 1.0, 0.88]
-['Garden', 'Thin', 6000, 1.1, 0.83]
-['Garden', 'Dense', 7500, 1.0, 0.95]
-['Glacier', '', 7500, 0.9, 0.85]
-['Barren (Rock)', '-', 2500, 0.9, 0.28]
-['Garden', 'Dense', 7000, 1.0, 0.88]
-['Garden', 'Thin', 7500, 1.0, 0.95]
-['Garden', 'Very Thin', 5500, 1.0, 0.69]
-['Garden', 'Very Thin', 6000, 0.8, 0.61]
-['Garden', 'Standard', 6000, 1.0, 0.76]
-['Garden', 'Dense', 8500, 1.0, 1.07]
-['Pre-Garden', '', 6500, 1.1, 0.9]
+{'type': 'Garden', 'atmosphere': 'Dense', 'diameter': 9000, 'density': 0.8, 'gravity': 0.91, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Dense Tainted', 'diameter': 7000, 'density': 0.9, 'gravity': 0.79, 'hydro': 0.5}
+{'type': 'Glacier', 'atmosphere': 'Suffocating', 'diameter': 6500, 'density': 1.0, 'gravity': 0.82, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 6500, 'density': 0.8, 'gravity': 0.66, 'hydro': 0.4}
+{'type': 'Garden', 'atmosphere': 'Thin', 'diameter': 5000, 'density': 1.2, 'gravity': 0.76, 'hydro': 0.6}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 5500, 'density': 1.0, 'gravity': 0.69, 'hydro': 0.8}
+{'type': 'Garden', 'atmosphere': 'Dense', 'diameter': 8000, 'density': 1.0, 'gravity': 1.01, 'hydro': 0.2}
+{'type': 'Garden', 'atmosphere': 'Dense', 'diameter': 8500, 'density': 0.8, 'gravity': 0.86, 'hydro': 0.4}
+{'type': 'Barren (Rock)', 'atmosphere': 'None (vacuum).', 'diameter': 2000, 'density': 0.7, 'gravity': 0.18, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 7500, 'density': 0.9, 'gravity': 0.85, 'hydro': 0.7}
+{'type': 'Pre-Garden', 'atmosphere': 'Suffocating', 'diameter': 6500, 'density': 0.9, 'gravity': 0.74, 'hydro': 0.2}
+{'type': 'Garden', 'atmosphere': 'Thin Tainted', 'diameter': 6500, 'density': 1.1, 'gravity': 0.9, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Dense', 'diameter': 9000, 'density': 0.8, 'gravity': 0.91, 'hydro': 0.9}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 4500, 'density': 1.2, 'gravity': 0.68, 'hydro': 0.4}
+{'type': 'Garden', 'atmosphere': 'Standard Tainted', 'diameter': 6500, 'density': 0.8, 'gravity': 0.66, 'hydro': 0.4}
+{'type': 'Desert (Rock)', 'atmosphere': 'Trace', 'diameter': 4000, 'density': 0.7, 'gravity': 0.35, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Dense Tainted', 'diameter': 7500, 'density': 1.0, 'gravity': 0.95, 'hydro': 0.6}
+{'type': 'Garden', 'atmosphere': 'Dense', 'diameter': 7000, 'density': 1.0, 'gravity': 0.88, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Standard Tainted', 'diameter': 6500, 'density': 0.9, 'gravity': 0.74, 'hydro': 0.8}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 6000, 'density': 0.9, 'gravity': 0.68, 'hydro': 0.4}
+{'type': 'Garden', 'atmosphere': 'Thin', 'diameter': 5500, 'density': 1.0, 'gravity': 0.69, 'hydro': 0.4}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 6000, 'density': 1.0, 'gravity': 0.76, 'hydro': 0.5}
+{'type': 'Glacier', 'atmosphere': 'Toxic', 'diameter': 7500, 'density': 0.8, 'gravity': 0.76, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Thin', 'diameter': 7000, 'density': 1.0, 'gravity': 0.88, 'hydro': 0.1}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 5500, 'density': 0.9, 'gravity': 0.62, 'hydro': 0.2}
+{'type': 'Garden', 'atmosphere': 'Dense', 'diameter': 8000, 'density': 0.9, 'gravity': 0.91, 'hydro': 1.0}
+{'type': 'Garden', 'atmosphere': 'Standard Tainted', 'diameter': 7000, 'density': 1.0, 'gravity': 0.88, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Very Thin Tainted', 'diameter': 6500, 'density': 1.1, 'gravity': 0.9, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Very Thin Tainted', 'diameter': 6500, 'density': 1.0, 'gravity': 0.82, 'hydro': 0.4}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 7000, 'density': 1.0, 'gravity': 0.88, 'hydro': 0.6}
+{'type': 'Desert (Rock)', 'atmosphere': 'Trace', 'diameter': 4000, 'density': 0.6, 'gravity': 0.3, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Dense', 'diameter': 7500, 'density': 1.0, 'gravity': 0.95, 'hydro': 0.2}
+{'type': 'Garden', 'atmosphere': 'Very Thin Tainted', 'diameter': 5500, 'density': 0.8, 'gravity': 0.55, 'hydro': 0.4}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 6000, 'density': 0.8, 'gravity': 0.61, 'hydro': 0.4}
+{'type': 'Pre-Garden', 'atmosphere': 'Suffocating', 'diameter': 8000, 'density': 0.9, 'gravity': 0.91, 'hydro': 0.5}
+{'type': 'Barren (Rock)', 'atmosphere': 'None (vacuum).', 'diameter': 2500, 'density': 0.7, 'gravity': 0.22, 'hydro': 0.0}
+{'type': 'Pre-Garden', 'atmosphere': 'Toxic', 'diameter': 6000, 'density': 1.0, 'gravity': 0.76, 'hydro': 0.4}
+{'type': 'Desert (Rock)', 'atmosphere': 'Trace', 'diameter': 3000, 'density': 0.7, 'gravity': 0.26, 'hydro': 0.0}
+{'type': 'Glacier', 'atmosphere': 'Suffocating', 'diameter': 7000, 'density': 0.9, 'gravity': 0.79, 'hydro': 0.0}
+{'type': 'Subgiant', 'atmosphere': 'Insidious', 'diameter': 9500, 'density': 0.9, 'gravity': 1.08, 'hydro': 0.3}
+{'type': 'Garden', 'atmosphere': 'Dense', 'diameter': 8500, 'density': 0.8, 'gravity': 0.86, 'hydro': 0.6}
+{'type': 'Garden', 'atmosphere': 'Very Thin Tainted', 'diameter': 7000, 'density': 0.9, 'gravity': 0.79, 'hydro': 0.3}
+{'type': 'Pre-Garden', 'atmosphere': 'Toxic', 'diameter': 7000, 'density': 0.9, 'gravity': 0.79, 'hydro': 0.4}
+{'type': 'Garden', 'atmosphere': 'Thin Tainted', 'diameter': 6500, 'density': 1.0, 'gravity': 0.82, 'hydro': 0.3}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 5000, 'density': 1.1, 'gravity': 0.69, 'hydro': 0.7}
+{'type': 'Garden', 'atmosphere': 'Very Thin Tainted', 'diameter': 6500, 'density': 1.0, 'gravity': 0.82, 'hydro': 0.2}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 6000, 'density': 0.9, 'gravity': 0.68, 'hydro': 0.2}
+{'type': 'Glacier', 'atmosphere': 'Suffocating', 'diameter': 4500, 'density': 1.0, 'gravity': 0.57, 'hydro': 0.0}
+{'type': 'Desert (Rock)', 'atmosphere': 'Trace', 'diameter': 4000, 'density': 0.7, 'gravity': 0.35, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Thin', 'diameter': 5000, 'density': 1.2, 'gravity': 0.76, 'hydro': 0.7}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 6500, 'density': 1.0, 'gravity': 0.82, 'hydro': 0.8}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 7000, 'density': 1.0, 'gravity': 0.88, 'hydro': 0.4}
+{'type': 'Garden', 'atmosphere': 'Thin', 'diameter': 6000, 'density': 1.0, 'gravity': 0.76, 'hydro': 0.2}
+{'type': 'Desert (Rock)', 'atmosphere': 'Trace', 'diameter': 4000, 'density': 0.8, 'gravity': 0.4, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 4500, 'density': 1.2, 'gravity': 0.68, 'hydro': 0.6}
+{'type': 'Garden', 'atmosphere': 'Dense', 'diameter': 7000, 'density': 0.8, 'gravity': 0.71, 'hydro': 0.3}
+{'type': 'Garden', 'atmosphere': 'Dense', 'diameter': 8000, 'density': 0.9, 'gravity': 0.91, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 8000, 'density': 0.9, 'gravity': 0.91, 'hydro': 0.9}
+{'type': 'Garden', 'atmosphere': 'Dense', 'diameter': 8000, 'density': 0.8, 'gravity': 0.81, 'hydro': 0.7}
+{'type': 'Garden', 'atmosphere': 'Dense', 'diameter': 6500, 'density': 1.0, 'gravity': 0.82, 'hydro': 0.2}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 6000, 'density': 0.9, 'gravity': 0.68, 'hydro': 0.2}
+{'type': 'Pre-Garden', 'atmosphere': 'Toxic', 'diameter': 7500, 'density': 1.0, 'gravity': 0.95, 'hydro': 0.7}
+{'type': 'Garden', 'atmosphere': 'Thin', 'diameter': 7500, 'density': 1.1, 'gravity': 1.04, 'hydro': 0.9}
+{'type': 'Asteroid Belt', 'atmosphere': 'None (vacuum).', 'diameter': 'None', 'density': 'None', 'gravity': 'None', 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 5000, 'density': 1.1, 'gravity': 0.69, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Thin', 'diameter': 6500, 'density': 0.8, 'gravity': 0.66, 'hydro': 0.8}
+{'type': 'Garden', 'atmosphere': 'Very Thin Tainted', 'diameter': 5500, 'density': 1.0, 'gravity': 0.69, 'hydro': 0.2}
+{'type': 'Glacier', 'atmosphere': 'Toxic', 'diameter': 6500, 'density': 0.9, 'gravity': 0.74, 'hydro': 0.0}
+{'type': 'Barren (Rock)', 'atmosphere': 'None (vacuum).', 'diameter': 2500, 'density': 0.6, 'gravity': 0.19, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Dense Tainted', 'diameter': 8000, 'density': 0.9, 'gravity': 0.91, 'hydro': 0.8}
+{'type': 'Desert (Rock)', 'atmosphere': 'Trace', 'diameter': 4000, 'density': 0.7, 'gravity': 0.35, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Thin', 'diameter': 6500, 'density': 0.9, 'gravity': 0.74, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Thin Tainted', 'diameter': 4500, 'density': 1.2, 'gravity': 0.68, 'hydro': 0.3}
+{'type': 'Glacier', 'atmosphere': 'Toxic', 'diameter': 6000, 'density': 0.9, 'gravity': 0.68, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 6500, 'density': 1.1, 'gravity': 0.9, 'hydro': 0.6}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 5500, 'density': 0.8, 'gravity': 0.55, 'hydro': 0.3}
+{'type': 'Glacier', 'atmosphere': 'Toxic', 'diameter': 6000, 'density': 1.1, 'gravity': 0.83, 'hydro': 0.0}
+{'type': 'Barren (Rock)', 'atmosphere': 'None (vacuum).', 'diameter': 2500, 'density': 0.7, 'gravity': 0.22, 'hydro': 0.0}
+{'type': 'Pre-Garden', 'atmosphere': 'Suffocating', 'diameter': 6000, 'density': 0.8, 'gravity': 0.61, 'hydro': 0.6}
+{'type': 'Garden', 'atmosphere': 'Dense Tainted', 'diameter': 7500, 'density': 0.9, 'gravity': 0.85, 'hydro': 0.6}
+{'type': 'Garden', 'atmosphere': 'Dense', 'diameter': 8000, 'density': 0.8, 'gravity': 0.81, 'hydro': 0.4}
+{'type': 'Glacier', 'atmosphere': 'Suffocating', 'diameter': 6500, 'density': 0.8, 'gravity': 0.66, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Very Thin Tainted', 'diameter': 4500, 'density': 1.2, 'gravity': 0.68, 'hydro': 0.7}
+{'type': 'Barren (Rock)', 'atmosphere': 'None (vacuum).', 'diameter': 1000, 'density': 0.6, 'gravity': 0.08, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Very Thin Tainted', 'diameter': 4500, 'density': 1.2, 'gravity': 0.68, 'hydro': 0.1}
+{'type': 'Garden', 'atmosphere': 'Standard Tainted', 'diameter': 7500, 'density': 1.1, 'gravity': 1.04, 'hydro': 0.6}
+{'type': 'Garden', 'atmosphere': 'Dense', 'diameter': 8000, 'density': 1.0, 'gravity': 1.01, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 5500, 'density': 1.0, 'gravity': 0.69, 'hydro': 1.0}
+{'type': 'Garden', 'atmosphere': 'Very Thin Tainted', 'diameter': 4500, 'density': 1.2, 'gravity': 0.68, 'hydro': 0.9}
+{'type': 'Pre-Garden', 'atmosphere': 'Toxic', 'diameter': 8000, 'density': 1.0, 'gravity': 1.01, 'hydro': 0.1}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 7500, 'density': 1.1, 'gravity': 1.04, 'hydro': 0.6}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 5500, 'density': 0.9, 'gravity': 0.62, 'hydro': 0.7}
+{'type': 'Barren (Rock)', 'atmosphere': 'None (vacuum).', 'diameter': 2500, 'density': 0.7, 'gravity': 0.22, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 6500, 'density': 1.1, 'gravity': 0.9, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Standard Tainted', 'diameter': 6000, 'density': 0.9, 'gravity': 0.68, 'hydro': 0.3}
+{'type': 'Garden', 'atmosphere': 'Dense', 'diameter': 8500, 'density': 0.8, 'gravity': 0.86, 'hydro': 0.3}
+{'type': 'Barren (Ice)', 'atmosphere': 'None (vacuum).', 'diameter': 1500, 'density': 0.4, 'gravity': 0.08, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Thin', 'diameter': 5000, 'density': 1.1, 'gravity': 0.69, 'hydro': 0.6}
+{'type': 'Garden', 'atmosphere': 'Very Thin Tainted', 'diameter': 6500, 'density': 0.8, 'gravity': 0.66, 'hydro': 0.3}
+{'type': 'Garden', 'atmosphere': 'Dense', 'diameter': 8500, 'density': 0.8, 'gravity': 0.86, 'hydro': 0.4}
+{'type': 'Garden', 'atmosphere': 'Dense Tainted', 'diameter': 8000, 'density': 0.8, 'gravity': 0.81, 'hydro': 0.7}
+{'type': 'Pre-Garden', 'atmosphere': 'Suffocating', 'diameter': 6500, 'density': 0.9, 'gravity': 0.74, 'hydro': 0.4}
+{'type': 'Glacier', 'atmosphere': 'Suffocating', 'diameter': 6500, 'density': 1.0, 'gravity': 0.82, 'hydro': 0.1}
+{'type': 'Garden', 'atmosphere': 'Dense', 'diameter': 7500, 'density': 0.9, 'gravity': 0.85, 'hydro': 0.3}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 6000, 'density': 0.9, 'gravity': 0.68, 'hydro': 0.4}
+{'type': 'Pre-Garden', 'atmosphere': 'Suffocating', 'diameter': 6500, 'density': 1.0, 'gravity': 0.82, 'hydro': 0.6}
+{'type': 'Barren (Ice)', 'atmosphere': 'None (vacuum).', 'diameter': 1500, 'density': 0.4, 'gravity': 0.08, 'hydro': 0.0}
+{'type': 'Desert (Rock)', 'atmosphere': 'Trace', 'diameter': 5000, 'density': 0.6, 'gravity': 0.38, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Dense', 'diameter': 8000, 'density': 1.0, 'gravity': 1.01, 'hydro': 0.2}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 6500, 'density': 1.0, 'gravity': 0.82, 'hydro': 0.4}
+{'type': 'Glacier', 'atmosphere': 'Suffocating', 'diameter': 6000, 'density': 1.0, 'gravity': 0.76, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Very Thin Tainted', 'diameter': 4500, 'density': 1.2, 'gravity': 0.68, 'hydro': 0.6}
+{'type': 'Barren (Rock)', 'atmosphere': 'None (vacuum).', 'diameter': 1000, 'density': 0.6, 'gravity': 0.08, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 5500, 'density': 0.9, 'gravity': 0.62, 'hydro': 0.1}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 5500, 'density': 0.9, 'gravity': 0.62, 'hydro': 0.3}
+{'type': 'Desert (Ice)', 'atmosphere': 'Toxic', 'diameter': 3500, 'density': 0.7, 'gravity': 0.31, 'hydro': 1.0}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 5000, 'density': 1.2, 'gravity': 0.76, 'hydro': 0.6}
+{'type': 'Garden', 'atmosphere': 'Standard Tainted', 'diameter': 8000, 'density': 1.0, 'gravity': 1.01, 'hydro': 0.7}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 6500, 'density': 1.0, 'gravity': 0.82, 'hydro': 0.0}
+{'type': 'Pre-Garden', 'atmosphere': 'Suffocating', 'diameter': 7500, 'density': 0.9, 'gravity': 0.85, 'hydro': 0.3}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 6500, 'density': 1.0, 'gravity': 0.82, 'hydro': 0.7}
+{'type': 'Greenhouse', 'atmosphere': 'Suffocating', 'diameter': 7000, 'density': 1.0, 'gravity': 0.88, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Thin', 'diameter': 5500, 'density': 1.0, 'gravity': 0.69, 'hydro': 0.9}
+{'type': 'Garden', 'atmosphere': 'Dense Tainted', 'diameter': 8500, 'density': 0.9, 'gravity': 0.96, 'hydro': 0.7}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 4500, 'density': 1.2, 'gravity': 0.68, 'hydro': 0.7}
+{'type': 'Garden', 'atmosphere': 'Standard Tainted', 'diameter': 6000, 'density': 1.1, 'gravity': 0.83, 'hydro': 0.3}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 5500, 'density': 0.9, 'gravity': 0.62, 'hydro': 0.6}
+{'type': 'Garden', 'atmosphere': 'Dense Tainted', 'diameter': 8500, 'density': 0.9, 'gravity': 0.96, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 6000, 'density': 1.0, 'gravity': 0.76, 'hydro': 0.7}
+{'type': 'Garden', 'atmosphere': 'Standard Tainted', 'diameter': 5000, 'density': 1.2, 'gravity': 0.76, 'hydro': 0.3}
+{'type': 'Garden', 'atmosphere': 'Dense Tainted', 'diameter': 8000, 'density': 1.1, 'gravity': 1.11, 'hydro': 0.7}
+{'type': 'Garden', 'atmosphere': 'Thin Tainted', 'diameter': 7500, 'density': 1.0, 'gravity': 0.95, 'hydro': 0.3}
+{'type': 'Garden', 'atmosphere': 'Thin', 'diameter': 7000, 'density': 1.1, 'gravity': 0.97, 'hydro': 0.4}
+{'type': 'Garden', 'atmosphere': 'Standard Tainted', 'diameter': 8000, 'density': 0.9, 'gravity': 0.91, 'hydro': 0.3}
+{'type': 'Garden', 'atmosphere': 'Thin Tainted', 'diameter': 6000, 'density': 0.9, 'gravity': 0.68, 'hydro': 0.6}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 8000, 'density': 0.9, 'gravity': 0.91, 'hydro': 0.4}
+{'type': 'Garden', 'atmosphere': 'Standard Tainted', 'diameter': 6000, 'density': 1.1, 'gravity': 0.83, 'hydro': 0.4}
+{'type': 'Garden', 'atmosphere': 'Thin', 'diameter': 5500, 'density': 0.9, 'gravity': 0.62, 'hydro': 0.3}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 4500, 'density': 1.2, 'gravity': 0.68, 'hydro': 0.3}
+{'type': 'Barren (Ice)', 'atmosphere': 'None (vacuum).', 'diameter': 1500, 'density': 0.4, 'gravity': 0.08, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Dense Tainted', 'diameter': 7500, 'density': 0.9, 'gravity': 0.85, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Dense', 'diameter': 7500, 'density': 0.9, 'gravity': 0.85, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Standard Tainted', 'diameter': 6000, 'density': 1.0, 'gravity': 0.76, 'hydro': 0.2}
+{'type': 'Desert (Ice)', 'atmosphere': 'Corrosive', 'diameter': 3000, 'density': 0.6, 'gravity': 0.23, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Dense', 'diameter': 7500, 'density': 1.0, 'gravity': 0.95, 'hydro': 0.7}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 5500, 'density': 1.0, 'gravity': 0.69, 'hydro': 0.4}
+{'type': 'Garden', 'atmosphere': 'Very Thin Tainted', 'diameter': 4500, 'density': 1.2, 'gravity': 0.68, 'hydro': 0.4}
+{'type': 'Garden', 'atmosphere': 'Standard Tainted', 'diameter': 7000, 'density': 1.0, 'gravity': 0.88, 'hydro': 0.1}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 4500, 'density': 1.2, 'gravity': 0.68, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Thin', 'diameter': 7000, 'density': 1.0, 'gravity': 0.88, 'hydro': 0.5}
+{'type': 'Glacier', 'atmosphere': 'Suffocating', 'diameter': 6500, 'density': 1.1, 'gravity': 0.9, 'hydro': 0.2}
+{'type': 'Garden', 'atmosphere': 'Dense', 'diameter': 7500, 'density': 1.0, 'gravity': 0.95, 'hydro': 0.9}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 6000, 'density': 0.9, 'gravity': 0.68, 'hydro': 0.3}
+{'type': 'Garden', 'atmosphere': 'Dense Tainted', 'diameter': 9000, 'density': 0.9, 'gravity': 1.02, 'hydro': 0.4}
+{'type': 'Barren (Rock)', 'atmosphere': 'None (vacuum).', 'diameter': 1000, 'density': 0.6, 'gravity': 0.08, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Thin Tainted', 'diameter': 6500, 'density': 1.0, 'gravity': 0.82, 'hydro': 0.9}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 6000, 'density': 0.8, 'gravity': 0.61, 'hydro': 0.6}
+{'type': 'Glacier', 'atmosphere': 'Suffocating', 'diameter': 4500, 'density': 1.0, 'gravity': 0.57, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 5500, 'density': 0.9, 'gravity': 0.62, 'hydro': 0.4}
+{'type': 'Desert (Rock)', 'atmosphere': 'Trace', 'diameter': 4000, 'density': 0.8, 'gravity': 0.4, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Dense', 'diameter': 9000, 'density': 0.9, 'gravity': 1.02, 'hydro': 0.4}
+{'type': 'Garden', 'atmosphere': 'Thin Tainted', 'diameter': 6000, 'density': 0.9, 'gravity': 0.68, 'hydro': 0.5}
+{'type': 'Asteroid Belt', 'atmosphere': 'None (vacuum).', 'diameter': 'None', 'density': 'None', 'gravity': 'None', 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Very Thin Tainted', 'diameter': 6000, 'density': 0.9, 'gravity': 0.68, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 6500, 'density': 1.1, 'gravity': 0.9, 'hydro': 0.7}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 6000, 'density': 1.0, 'gravity': 0.76, 'hydro': 0.4}
+{'type': 'Barren (Rock)', 'atmosphere': 'None (vacuum).', 'diameter': 1500, 'density': 0.6, 'gravity': 0.11, 'hydro': 0.0}
+{'type': 'Asteroid Belt', 'atmosphere': 'None (vacuum).', 'diameter': 'None', 'density': 'None', 'gravity': 'None', 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 7000, 'density': 1.1, 'gravity': 0.97, 'hydro': 0.8}
+{'type': 'Garden', 'atmosphere': 'Thin', 'diameter': 6000, 'density': 0.9, 'gravity': 0.68, 'hydro': 0.6}
+{'type': 'Glacier', 'atmosphere': 'Suffocating', 'diameter': 7500, 'density': 1.0, 'gravity': 0.95, 'hydro': 0.2}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 7500, 'density': 0.9, 'gravity': 0.85, 'hydro': 0.2}
+{'type': 'Garden', 'atmosphere': 'Thin Tainted', 'diameter': 6000, 'density': 1.1, 'gravity': 0.83, 'hydro': 0.3}
+{'type': 'Garden', 'atmosphere': 'Thin', 'diameter': 7500, 'density': 0.8, 'gravity': 0.76, 'hydro': 0.4}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 6500, 'density': 1.0, 'gravity': 0.82, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 6500, 'density': 0.9, 'gravity': 0.74, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Standard Tainted', 'diameter': 6500, 'density': 0.9, 'gravity': 0.74, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 7000, 'density': 1.1, 'gravity': 0.97, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Standard Tainted', 'diameter': 7500, 'density': 1.0, 'gravity': 0.95, 'hydro': 0.2}
+{'type': 'Desert (Ice)', 'atmosphere': 'Corrosive', 'diameter': 3000, 'density': 0.6, 'gravity': 0.23, 'hydro': 0.7}
+{'type': 'Desert (Rock)', 'atmosphere': 'Trace', 'diameter': 3500, 'density': 0.7, 'gravity': 0.31, 'hydro': 0.0}
+{'type': 'Glacier', 'atmosphere': 'Suffocating', 'diameter': 6000, 'density': 1.0, 'gravity': 0.76, 'hydro': 0.0}
+{'type': 'Desert (Rock)', 'atmosphere': 'Trace', 'diameter': 4000, 'density': 0.8, 'gravity': 0.4, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Dense', 'diameter': 9000, 'density': 0.8, 'gravity': 0.91, 'hydro': 0.6}
+{'type': 'Garden', 'atmosphere': 'Dense', 'diameter': 8000, 'density': 1.0, 'gravity': 1.01, 'hydro': 0.8}
+{'type': 'Glacier', 'atmosphere': 'Suffocating', 'diameter': 6000, 'density': 0.9, 'gravity': 0.68, 'hydro': 0.0}
+{'type': 'Glacier', 'atmosphere': 'Suffocating', 'diameter': 6000, 'density': 0.9, 'gravity': 0.68, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 6500, 'density': 0.9, 'gravity': 0.74, 'hydro': 0.7}
+{'type': 'Garden', 'atmosphere': 'Very Thin Tainted', 'diameter': 5000, 'density': 1.2, 'gravity': 0.76, 'hydro': 0.3}
+{'type': 'Garden', 'atmosphere': 'Very Thin Tainted', 'diameter': 6000, 'density': 1.0, 'gravity': 0.76, 'hydro': 0.3}
+{'type': 'Pre-Garden', 'atmosphere': 'Suffocating', 'diameter': 8000, 'density': 0.9, 'gravity': 0.91, 'hydro': 0.6}
+{'type': 'Garden', 'atmosphere': 'Dense', 'diameter': 7500, 'density': 1.0, 'gravity': 0.95, 'hydro': 0.1}
+{'type': 'Garden', 'atmosphere': 'Dense Tainted', 'diameter': 8000, 'density': 0.8, 'gravity': 0.81, 'hydro': 0.7}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 4500, 'density': 1.2, 'gravity': 0.68, 'hydro': 0.9}
+{'type': 'Subgiant', 'atmosphere': 'Insidious', 'diameter': 9500, 'density': 1.0, 'gravity': 1.2, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Standard Tainted', 'diameter': 7000, 'density': 0.9, 'gravity': 0.79, 'hydro': 0.2}
+{'type': 'Desert (Ice)', 'atmosphere': 'Corrosive', 'diameter': 3000, 'density': 0.7, 'gravity': 0.26, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 4500, 'density': 1.2, 'gravity': 0.68, 'hydro': 0.2}
+{'type': 'Barren (Ice)', 'atmosphere': 'None (vacuum).', 'diameter': 2500, 'density': 0.3, 'gravity': 0.09, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Dense Tainted', 'diameter': 7500, 'density': 0.8, 'gravity': 0.76, 'hydro': 0.7}
+{'type': 'Garden', 'atmosphere': 'Standard Tainted', 'diameter': 6000, 'density': 0.9, 'gravity': 0.68, 'hydro': 0.6}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 4500, 'density': 1.2, 'gravity': 0.68, 'hydro': 0.3}
+{'type': 'Glacier', 'atmosphere': 'Toxic', 'diameter': 7000, 'density': 1.0, 'gravity': 0.88, 'hydro': 0.0}
+{'type': 'Glacier', 'atmosphere': 'Suffocating', 'diameter': 6000, 'density': 0.9, 'gravity': 0.68, 'hydro': 0.0}
+{'type': 'Desert (Ice)', 'atmosphere': 'Corrosive', 'diameter': 3000, 'density': 0.7, 'gravity': 0.26, 'hydro': 0.8}
+{'type': 'Pre-Garden', 'atmosphere': 'Suffocating', 'diameter': 7000, 'density': 1.0, 'gravity': 0.88, 'hydro': 0.4}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 6000, 'density': 1.0, 'gravity': 0.76, 'hydro': 0.6}
+{'type': 'Desert (Rock)', 'atmosphere': 'Trace', 'diameter': 4000, 'density': 0.9, 'gravity': 0.45, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 5000, 'density': 1.0, 'gravity': 0.63, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 7000, 'density': 1.0, 'gravity': 0.88, 'hydro': 0.6}
+{'type': 'Garden', 'atmosphere': 'Standard Tainted', 'diameter': 7500, 'density': 1.0, 'gravity': 0.95, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Thin', 'diameter': 6500, 'density': 1.0, 'gravity': 0.82, 'hydro': 0.3}
+{'type': 'Garden', 'atmosphere': 'Standard Tainted', 'diameter': 7000, 'density': 0.8, 'gravity': 0.71, 'hydro': 0.6}
+{'type': 'Garden', 'atmosphere': 'Dense', 'diameter': 7000, 'density': 0.9, 'gravity': 0.79, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 5000, 'density': 1.2, 'gravity': 0.76, 'hydro': 0.5}
+{'type': 'Barren (Rock)', 'atmosphere': 'None (vacuum).', 'diameter': 2000, 'density': 0.8, 'gravity': 0.2, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 6500, 'density': 0.9, 'gravity': 0.74, 'hydro': 0.3}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 7000, 'density': 1.1, 'gravity': 0.97, 'hydro': 0.7}
+{'type': 'Garden', 'atmosphere': 'Dense Tainted', 'diameter': 7000, 'density': 1.0, 'gravity': 0.88, 'hydro': 0.4}
+{'type': 'Garden', 'atmosphere': 'Very Dense Tainted', 'diameter': 8500, 'density': 0.8, 'gravity': 0.86, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Standard Tainted', 'diameter': 7000, 'density': 0.9, 'gravity': 0.79, 'hydro': 0.2}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 6500, 'density': 1.0, 'gravity': 0.82, 'hydro': 0.4}
+{'type': 'Glacier', 'atmosphere': 'Suffocating', 'diameter': 5500, 'density': 1.0, 'gravity': 0.69, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Dense', 'diameter': 8500, 'density': 0.9, 'gravity': 0.96, 'hydro': 0.3}
+{'type': 'Pre-Garden', 'atmosphere': 'Suffocating', 'diameter': 6500, 'density': 1.0, 'gravity': 0.82, 'hydro': 0.1}
+{'type': 'Garden', 'atmosphere': 'Very Thin Tainted', 'diameter': 5500, 'density': 1.1, 'gravity': 0.76, 'hydro': 0.4}
+{'type': 'Asteroid Belt', 'atmosphere': 'None (vacuum).', 'diameter': 'None', 'density': 'None', 'gravity': 'None', 'hydro': 0.0}
+{'type': 'Pre-Garden', 'atmosphere': 'Suffocating', 'diameter': 7000, 'density': 0.8, 'gravity': 0.71, 'hydro': 0.3}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 6000, 'density': 0.9, 'gravity': 0.68, 'hydro': 0.2}
+{'type': 'Asteroid Belt', 'atmosphere': 'None (vacuum).', 'diameter': 'None', 'density': 'None', 'gravity': 'None', 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Thin', 'diameter': 6000, 'density': 0.9, 'gravity': 0.68, 'hydro': 0.3}
+{'type': 'Garden', 'atmosphere': 'Thin', 'diameter': 6000, 'density': 1.0, 'gravity': 0.76, 'hydro': 0.7}
+{'type': 'Garden', 'atmosphere': 'Dense', 'diameter': 7000, 'density': 0.8, 'gravity': 0.71, 'hydro': 0.3}
+{'type': 'Pre-Garden', 'atmosphere': 'Suffocating', 'diameter': 6500, 'density': 0.9, 'gravity': 0.74, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Dense Tainted', 'diameter': 8000, 'density': 0.8, 'gravity': 0.81, 'hydro': 1.0}
+{'type': 'Garden', 'atmosphere': 'Dense', 'diameter': 7500, 'density': 0.9, 'gravity': 0.85, 'hydro': 0.9}
+{'type': 'Garden', 'atmosphere': 'Dense', 'diameter': 7500, 'density': 1.0, 'gravity': 0.95, 'hydro': 0.9}
+{'type': 'Garden', 'atmosphere': 'Dense Tainted', 'diameter': 8000, 'density': 1.0, 'gravity': 1.01, 'hydro': 0.9}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 7000, 'density': 0.9, 'gravity': 0.79, 'hydro': 0.8}
+{'type': 'Garden', 'atmosphere': 'Dense Tainted', 'diameter': 7000, 'density': 0.9, 'gravity': 0.79, 'hydro': 0.7}
+{'type': 'Garden', 'atmosphere': 'Dense Tainted', 'diameter': 7000, 'density': 1.0, 'gravity': 0.88, 'hydro': 0.8}
+{'type': 'Garden', 'atmosphere': 'Thin Tainted', 'diameter': 5000, 'density': 1.2, 'gravity': 0.76, 'hydro': 0.3}
+{'type': 'Garden', 'atmosphere': 'Thin', 'diameter': 5500, 'density': 0.8, 'gravity': 0.55, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Dense', 'diameter': 6500, 'density': 1.0, 'gravity': 0.82, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Dense Tainted', 'diameter': 8500, 'density': 0.9, 'gravity': 0.96, 'hydro': 0.3}
+{'type': 'Garden', 'atmosphere': 'Thin', 'diameter': 6500, 'density': 0.8, 'gravity': 0.66, 'hydro': 0.8}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 5500, 'density': 1.1, 'gravity': 0.76, 'hydro': 0.0}
+{'type': 'Pre-Garden', 'atmosphere': 'Toxic', 'diameter': 8000, 'density': 0.8, 'gravity': 0.81, 'hydro': 0.7}
+{'type': 'Asteroid Belt', 'atmosphere': 'None (vacuum).', 'diameter': 'None', 'density': 'None', 'gravity': 'None', 'hydro': 0.0}
+{'type': 'Glacier', 'atmosphere': 'Suffocating', 'diameter': 5500, 'density': 1.0, 'gravity': 0.69, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 7000, 'density': 1.0, 'gravity': 0.88, 'hydro': 0.7}
+{'type': 'Garden', 'atmosphere': 'Very Thin Tainted', 'diameter': 4500, 'density': 1.2, 'gravity': 0.68, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 6000, 'density': 1.1, 'gravity': 0.83, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Standard Tainted', 'diameter': 7000, 'density': 1.0, 'gravity': 0.88, 'hydro': 0.4}
+{'type': 'Garden', 'atmosphere': 'Dense', 'diameter': 7000, 'density': 0.8, 'gravity': 0.71, 'hydro': 0.4}
+{'type': 'Garden', 'atmosphere': 'Dense Tainted', 'diameter': 7500, 'density': 0.9, 'gravity': 0.85, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 6500, 'density': 1.1, 'gravity': 0.9, 'hydro': 0.4}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 6500, 'density': 1.1, 'gravity': 0.9, 'hydro': 0.9}
+{'type': 'Pre-Garden', 'atmosphere': 'Toxic', 'diameter': 6000, 'density': 1.0, 'gravity': 0.76, 'hydro': 0.1}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 5500, 'density': 0.9, 'gravity': 0.62, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Dense', 'diameter': 7500, 'density': 1.0, 'gravity': 0.95, 'hydro': 0.9}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 6500, 'density': 0.9, 'gravity': 0.74, 'hydro': 0.6}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 6500, 'density': 0.9, 'gravity': 0.74, 'hydro': 0.7}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 8000, 'density': 0.9, 'gravity': 0.91, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 5500, 'density': 1.0, 'gravity': 0.69, 'hydro': 0.6}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 4500, 'density': 1.2, 'gravity': 0.68, 'hydro': 0.7}
+{'type': 'Barren (Rock)', 'atmosphere': 'None (vacuum).', 'diameter': 2500, 'density': 0.7, 'gravity': 0.22, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Dense', 'diameter': 8000, 'density': 0.9, 'gravity': 0.91, 'hydro': 0.6}
+{'type': 'Desert (Rock)', 'atmosphere': 'Trace', 'diameter': 5000, 'density': 0.6, 'gravity': 0.38, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Very Thin Tainted', 'diameter': 4500, 'density': 1.2, 'gravity': 0.68, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 4500, 'density': 1.2, 'gravity': 0.68, 'hydro': 0.4}
+{'type': 'Garden', 'atmosphere': 'Standard Tainted', 'diameter': 7000, 'density': 1.1, 'gravity': 0.97, 'hydro': 0.4}
+{'type': 'Garden', 'atmosphere': 'Standard Tainted', 'diameter': 7500, 'density': 1.0, 'gravity': 0.95, 'hydro': 0.8}
+{'type': 'Desert (Ice)', 'atmosphere': 'Toxic', 'diameter': 3500, 'density': 0.4, 'gravity': 0.18, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Dense', 'diameter': 7000, 'density': 1.0, 'gravity': 0.88, 'hydro': 0.6}
+{'type': 'Garden', 'atmosphere': 'Dense Tainted', 'diameter': 7000, 'density': 0.9, 'gravity': 0.79, 'hydro': 0.6}
+{'type': 'Barren (Rock)', 'atmosphere': 'None (vacuum).', 'diameter': 3500, 'density': 0.6, 'gravity': 0.26, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 4500, 'density': 1.2, 'gravity': 0.68, 'hydro': 0.3}
+{'type': 'Garden', 'atmosphere': 'Very Thin Tainted', 'diameter': 4500, 'density': 1.2, 'gravity': 0.68, 'hydro': 0.4}
+{'type': 'Garden', 'atmosphere': 'Dense Tainted', 'diameter': 8000, 'density': 1.0, 'gravity': 1.01, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Very Thin Tainted', 'diameter': 6500, 'density': 0.9, 'gravity': 0.74, 'hydro': 0.6}
+{'type': 'Garden', 'atmosphere': 'Thin Tainted', 'diameter': 5500, 'density': 0.9, 'gravity': 0.62, 'hydro': 0.8}
+{'type': 'Garden', 'atmosphere': 'Very Thin Tainted', 'diameter': 6000, 'density': 0.9, 'gravity': 0.68, 'hydro': 0.1}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 4500, 'density': 1.2, 'gravity': 0.68, 'hydro': 0.3}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 4500, 'density': 1.2, 'gravity': 0.68, 'hydro': 0.2}
+{'type': 'Garden', 'atmosphere': 'Thin', 'diameter': 5500, 'density': 0.8, 'gravity': 0.55, 'hydro': 0.8}
+{'type': 'Garden', 'atmosphere': 'Very Thin Tainted', 'diameter': 5500, 'density': 0.8, 'gravity': 0.55, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Standard Tainted', 'diameter': 7000, 'density': 0.9, 'gravity': 0.79, 'hydro': 0.1}
+{'type': 'Garden', 'atmosphere': 'Dense', 'diameter': 8000, 'density': 1.0, 'gravity': 1.01, 'hydro': 0.2}
+{'type': 'Desert (Rock)', 'atmosphere': 'Trace', 'diameter': 4000, 'density': 0.8, 'gravity': 0.4, 'hydro': 0.0}
+{'type': 'Desert (Rock)', 'atmosphere': 'Trace', 'diameter': 4000, 'density': 0.6, 'gravity': 0.3, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 7500, 'density': 1.1, 'gravity': 1.04, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Standard Tainted', 'diameter': 7500, 'density': 1.1, 'gravity': 1.04, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 4500, 'density': 1.2, 'gravity': 0.68, 'hydro': 0.3}
+{'type': 'Garden', 'atmosphere': 'Dense', 'diameter': 6000, 'density': 1.0, 'gravity': 0.76, 'hydro': 0.4}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 5500, 'density': 0.9, 'gravity': 0.62, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 6500, 'density': 0.9, 'gravity': 0.74, 'hydro': 0.6}
+{'type': 'Garden', 'atmosphere': 'Dense Tainted', 'diameter': 7500, 'density': 0.9, 'gravity': 0.85, 'hydro': 0.6}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 7000, 'density': 1.0, 'gravity': 0.88, 'hydro': 0.8}
+{'type': 'Garden', 'atmosphere': 'Dense Tainted', 'diameter': 6000, 'density': 0.9, 'gravity': 0.68, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Standard Tainted', 'diameter': 7000, 'density': 1.0, 'gravity': 0.88, 'hydro': 0.3}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 5500, 'density': 0.9, 'gravity': 0.62, 'hydro': 0.8}
+{'type': 'Barren (Ice)', 'atmosphere': 'None (vacuum).', 'diameter': 1500, 'density': 0.4, 'gravity': 0.08, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Thin Tainted', 'diameter': 4500, 'density': 1.2, 'gravity': 0.68, 'hydro': 0.6}
+{'type': 'Garden', 'atmosphere': 'Thin', 'diameter': 6000, 'density': 1.0, 'gravity': 0.76, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Standard Tainted', 'diameter': 7000, 'density': 0.9, 'gravity': 0.79, 'hydro': 1.0}
+{'type': 'Garden', 'atmosphere': 'Very Thin Tainted', 'diameter': 6000, 'density': 0.9, 'gravity': 0.68, 'hydro': 0.7}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 4500, 'density': 1.2, 'gravity': 0.68, 'hydro': 0.8}
+{'type': 'Garden', 'atmosphere': 'Very Thin Tainted', 'diameter': 4500, 'density': 1.2, 'gravity': 0.68, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Standard Tainted', 'diameter': 6500, 'density': 1.1, 'gravity': 0.9, 'hydro': 0.8}
+{'type': 'Garden', 'atmosphere': 'Dense Tainted', 'diameter': 7000, 'density': 0.9, 'gravity': 0.79, 'hydro': 0.7}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 6000, 'density': 0.9, 'gravity': 0.68, 'hydro': 0.4}
+{'type': 'Garden', 'atmosphere': 'Very Thin Tainted', 'diameter': 6500, 'density': 1.1, 'gravity': 0.9, 'hydro': 0.9}
+{'type': 'Desert (Ice)', 'atmosphere': 'Toxic', 'diameter': 3000, 'density': 0.6, 'gravity': 0.23, 'hydro': 0.6}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 7000, 'density': 0.9, 'gravity': 0.79, 'hydro': 0.4}
+{'type': 'Garden', 'atmosphere': 'Standard Tainted', 'diameter': 7500, 'density': 1.0, 'gravity': 0.95, 'hydro': 0.3}
+{'type': 'Garden', 'atmosphere': 'Thin Tainted', 'diameter': 6000, 'density': 0.9, 'gravity': 0.68, 'hydro': 0.3}
+{'type': 'Asteroid Belt', 'atmosphere': 'None (vacuum).', 'diameter': 'None', 'density': 'None', 'gravity': 'None', 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 6000, 'density': 0.8, 'gravity': 0.61, 'hydro': 0.1}
+{'type': 'Asteroid Belt', 'atmosphere': 'None (vacuum).', 'diameter': 'None', 'density': 'None', 'gravity': 'None', 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Thin Tainted', 'diameter': 4500, 'density': 1.2, 'gravity': 0.68, 'hydro': 0.3}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 6000, 'density': 1.0, 'gravity': 0.76, 'hydro': 0.3}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 5500, 'density': 1.1, 'gravity': 0.76, 'hydro': 0.4}
+{'type': 'Garden', 'atmosphere': 'Very Thin Tainted', 'diameter': 4500, 'density': 1.2, 'gravity': 0.68, 'hydro': 0.4}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 6000, 'density': 0.9, 'gravity': 0.68, 'hydro': 0.3}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 7500, 'density': 0.8, 'gravity': 0.76, 'hydro': 0.6}
+{'type': 'Glacier', 'atmosphere': 'Toxic', 'diameter': 6000, 'density': 0.9, 'gravity': 0.68, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 6500, 'density': 1.0, 'gravity': 0.82, 'hydro': 0.6}
+{'type': 'Garden', 'atmosphere': 'Standard Tainted', 'diameter': 7500, 'density': 1.0, 'gravity': 0.95, 'hydro': 0.3}
+{'type': 'Garden', 'atmosphere': 'Very Thin Tainted', 'diameter': 4500, 'density': 1.2, 'gravity': 0.68, 'hydro': 0.8}
+{'type': 'Garden', 'atmosphere': 'Dense', 'diameter': 9000, 'density': 0.8, 'gravity': 0.91, 'hydro': 0.2}
+{'type': 'Garden', 'atmosphere': 'Standard Tainted', 'diameter': 6000, 'density': 1.0, 'gravity': 0.76, 'hydro': 0.8}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 7500, 'density': 1.0, 'gravity': 0.95, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Very Thin Tainted', 'diameter': 6000, 'density': 1.0, 'gravity': 0.76, 'hydro': 0.4}
+{'type': 'Glacier', 'atmosphere': 'Suffocating', 'diameter': 6500, 'density': 0.9, 'gravity': 0.74, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Very Thin Tainted', 'diameter': 6000, 'density': 0.9, 'gravity': 0.68, 'hydro': 0.3}
+{'type': 'Glacier', 'atmosphere': 'Suffocating', 'diameter': 6000, 'density': 0.9, 'gravity': 0.68, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Standard Tainted', 'diameter': 7000, 'density': 0.9, 'gravity': 0.79, 'hydro': 0.6}
+{'type': 'Greenhouse', 'atmosphere': 'Suffocating', 'diameter': 7500, 'density': 1.0, 'gravity': 0.95, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Thin', 'diameter': 6500, 'density': 0.8, 'gravity': 0.66, 'hydro': 0.6}
+{'type': 'Barren (Rock)', 'atmosphere': 'None (vacuum).', 'diameter': 2500, 'density': 0.7, 'gravity': 0.22, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 8000, 'density': 0.9, 'gravity': 0.91, 'hydro': 0.4}
+{'type': 'Garden', 'atmosphere': 'Thin Tainted', 'diameter': 6500, 'density': 0.8, 'gravity': 0.66, 'hydro': 0.2}
+{'type': 'Barren (Rock)', 'atmosphere': 'None (vacuum).', 'diameter': 2500, 'density': 0.8, 'gravity': 0.25, 'hydro': 0.0}
+{'type': 'Glacier', 'atmosphere': 'Toxic', 'diameter': 5500, 'density': 0.9, 'gravity': 0.62, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Standard Tainted', 'diameter': 7500, 'density': 0.9, 'gravity': 0.85, 'hydro': 0.6}
+{'type': 'Pre-Garden', 'atmosphere': 'Suffocating', 'diameter': 6500, 'density': 0.9, 'gravity': 0.74, 'hydro': 0.2}
+{'type': 'Glacier', 'atmosphere': 'Toxic', 'diameter': 7500, 'density': 0.8, 'gravity': 0.76, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 7500, 'density': 0.9, 'gravity': 0.85, 'hydro': 0.6}
+{'type': 'Glacier', 'atmosphere': 'Suffocating', 'diameter': 7000, 'density': 0.8, 'gravity': 0.71, 'hydro': 0.0}
+{'type': 'Subgiant', 'atmosphere': 'Corrosive', 'diameter': 9500, 'density': 1.0, 'gravity': 1.2, 'hydro': 0.5}
+{'type': 'Glacier', 'atmosphere': 'Suffocating', 'diameter': 6000, 'density': 0.9, 'gravity': 0.68, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Thin', 'diameter': 5500, 'density': 0.9, 'gravity': 0.62, 'hydro': 0.1}
+{'type': 'Garden', 'atmosphere': 'Standard Tainted', 'diameter': 5500, 'density': 1.0, 'gravity': 0.69, 'hydro': 0.4}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 4500, 'density': 1.2, 'gravity': 0.68, 'hydro': 0.4}
+{'type': 'Desert (Rock)', 'atmosphere': 'Trace', 'diameter': 4500, 'density': 0.7, 'gravity': 0.4, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Thin', 'diameter': 6000, 'density': 1.0, 'gravity': 0.76, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 5000, 'density': 1.2, 'gravity': 0.76, 'hydro': 0.7}
+{'type': 'Garden', 'atmosphere': 'Standard Tainted', 'diameter': 7500, 'density': 0.9, 'gravity': 0.85, 'hydro': 0.3}
+{'type': 'Garden', 'atmosphere': 'Standard Tainted', 'diameter': 6000, 'density': 1.0, 'gravity': 0.76, 'hydro': 0.1}
+{'type': 'Garden', 'atmosphere': 'Thin Tainted', 'diameter': 6500, 'density': 0.9, 'gravity': 0.74, 'hydro': 0.4}
+{'type': 'Garden', 'atmosphere': 'Standard Tainted', 'diameter': 7500, 'density': 0.9, 'gravity': 0.85, 'hydro': 0.4}
+{'type': 'Garden', 'atmosphere': 'Very Thin Tainted', 'diameter': 5000, 'density': 1.2, 'gravity': 0.76, 'hydro': 0.3}
+{'type': 'Garden', 'atmosphere': 'Very Thin Tainted', 'diameter': 6000, 'density': 1.0, 'gravity': 0.76, 'hydro': 0.2}
+{'type': 'Desert (Rock)', 'atmosphere': 'Trace', 'diameter': 4500, 'density': 0.7, 'gravity': 0.4, 'hydro': 0.0}
+{'type': 'Pre-Garden', 'atmosphere': 'Toxic', 'diameter': 7500, 'density': 0.9, 'gravity': 0.85, 'hydro': 0.4}
+{'type': 'Desert (Rock)', 'atmosphere': 'Trace', 'diameter': 4500, 'density': 0.6, 'gravity': 0.34, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 7500, 'density': 0.9, 'gravity': 0.85, 'hydro': 0.8}
+{'type': 'Garden', 'atmosphere': 'Dense Tainted', 'diameter': 9000, 'density': 0.8, 'gravity': 0.91, 'hydro': 0.4}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 5500, 'density': 1.0, 'gravity': 0.69, 'hydro': 0.3}
+{'type': 'Garden', 'atmosphere': 'Standard Tainted', 'diameter': 5000, 'density': 1.2, 'gravity': 0.76, 'hydro': 0.6}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 4500, 'density': 1.2, 'gravity': 0.68, 'hydro': 0.3}
+{'type': 'Garden', 'atmosphere': 'Very Thin Tainted', 'diameter': 4500, 'density': 1.2, 'gravity': 0.68, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Dense Tainted', 'diameter': 7000, 'density': 0.9, 'gravity': 0.79, 'hydro': 0.4}
+{'type': 'Garden', 'atmosphere': 'Thin Tainted', 'diameter': 6000, 'density': 0.9, 'gravity': 0.68, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 7000, 'density': 0.9, 'gravity': 0.79, 'hydro': 0.6}
+{'type': 'Garden', 'atmosphere': 'Standard Tainted', 'diameter': 8000, 'density': 1.0, 'gravity': 1.01, 'hydro': 0.2}
+{'type': 'Garden', 'atmosphere': 'Thin', 'diameter': 6000, 'density': 0.9, 'gravity': 0.68, 'hydro': 0.5}
+{'type': 'Barren (Rock)', 'atmosphere': 'None (vacuum).', 'diameter': 1500, 'density': 0.6, 'gravity': 0.11, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 5500, 'density': 0.9, 'gravity': 0.62, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 6000, 'density': 0.8, 'gravity': 0.61, 'hydro': 0.3}
+{'type': 'Garden', 'atmosphere': 'Thin', 'diameter': 7000, 'density': 1.0, 'gravity': 0.88, 'hydro': 0.8}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 5500, 'density': 0.9, 'gravity': 0.62, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Very Thin Tainted', 'diameter': 5500, 'density': 0.9, 'gravity': 0.62, 'hydro': 0.2}
+{'type': 'Garden', 'atmosphere': 'Standard Tainted', 'diameter': 8000, 'density': 0.8, 'gravity': 0.81, 'hydro': 0.5}
+{'type': 'Greenhouse', 'atmosphere': 'Suffocating', 'diameter': 7000, 'density': 0.9, 'gravity': 0.79, 'hydro': 0.0}
+{'type': 'Barren (Rock)', 'atmosphere': 'None (vacuum).', 'diameter': 1000, 'density': 0.6, 'gravity': 0.08, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Very Thin Tainted', 'diameter': 6000, 'density': 0.9, 'gravity': 0.68, 'hydro': 0.4}
+{'type': 'Glacier', 'atmosphere': 'Suffocating', 'diameter': 5500, 'density': 1.0, 'gravity': 0.69, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 5500, 'density': 1.0, 'gravity': 0.69, 'hydro': 0.9}
+{'type': 'Garden', 'atmosphere': 'Thin Tainted', 'diameter': 6500, 'density': 1.0, 'gravity': 0.82, 'hydro': 0.6}
+{'type': 'Garden', 'atmosphere': 'Thin Tainted', 'diameter': 7000, 'density': 1.0, 'gravity': 0.88, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 6000, 'density': 1.0, 'gravity': 0.76, 'hydro': 0.4}
+{'type': 'Barren (Ice)', 'atmosphere': 'None (vacuum).', 'diameter': 1500, 'density': 0.3, 'gravity': 0.06, 'hydro': 0.0}
+{'type': 'Pre-Garden', 'atmosphere': 'Suffocating', 'diameter': 7500, 'density': 0.9, 'gravity': 0.85, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Dense', 'diameter': 7500, 'density': 0.8, 'gravity': 0.76, 'hydro': 0.4}
+{'type': 'Garden', 'atmosphere': 'Very Dense', 'diameter': 8000, 'density': 0.8, 'gravity': 0.81, 'hydro': 0.7}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 5500, 'density': 1.0, 'gravity': 0.69, 'hydro': 0.3}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 6500, 'density': 1.1, 'gravity': 0.9, 'hydro': 0.4}
+{'type': 'Garden', 'atmosphere': 'Dense Tainted', 'diameter': 9000, 'density': 0.8, 'gravity': 0.91, 'hydro': 0.4}
+{'type': 'Garden', 'atmosphere': 'Dense Tainted', 'diameter': 7500, 'density': 1.0, 'gravity': 0.95, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 7000, 'density': 1.0, 'gravity': 0.88, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Thin', 'diameter': 6000, 'density': 1.1, 'gravity': 0.83, 'hydro': 0.3}
+{'type': 'Barren (Rock)', 'atmosphere': 'None (vacuum).', 'diameter': 1000, 'density': 0.6, 'gravity': 0.08, 'hydro': 0.0}
+{'type': 'Pre-Garden', 'atmosphere': 'Suffocating', 'diameter': 6500, 'density': 0.9, 'gravity': 0.74, 'hydro': 0.5}
+{'type': 'Desert (Ice)', 'atmosphere': 'Corrosive', 'diameter': 3000, 'density': 0.7, 'gravity': 0.26, 'hydro': 0.4}
+{'type': 'Garden', 'atmosphere': 'Very Dense', 'diameter': 8000, 'density': 1.1, 'gravity': 1.11, 'hydro': 0.7}
+{'type': 'Garden', 'atmosphere': 'Dense Tainted', 'diameter': 7500, 'density': 0.9, 'gravity': 0.85, 'hydro': 0.2}
+{'type': 'Pre-Garden', 'atmosphere': 'Toxic', 'diameter': 8000, 'density': 1.0, 'gravity': 1.01, 'hydro': 0.7}
+{'type': 'Garden', 'atmosphere': 'Standard Tainted', 'diameter': 6000, 'density': 1.1, 'gravity': 0.83, 'hydro': 0.7}
+{'type': 'Desert (Rock)', 'atmosphere': 'Trace', 'diameter': 4500, 'density': 0.6, 'gravity': 0.34, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 6500, 'density': 0.8, 'gravity': 0.66, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Standard Tainted', 'diameter': 8500, 'density': 0.9, 'gravity': 0.96, 'hydro': 0.7}
+{'type': 'Garden', 'atmosphere': 'Standard Tainted', 'diameter': 6500, 'density': 0.9, 'gravity': 0.74, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Dense', 'diameter': 7000, 'density': 1.1, 'gravity': 0.97, 'hydro': 0.8}
+{'type': 'Garden', 'atmosphere': 'Standard Tainted', 'diameter': 8000, 'density': 0.8, 'gravity': 0.81, 'hydro': 0.9}
+{'type': 'Garden', 'atmosphere': 'Standard Tainted', 'diameter': 7500, 'density': 0.9, 'gravity': 0.85, 'hydro': 0.3}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 8000, 'density': 0.9, 'gravity': 0.91, 'hydro': 0.6}
+{'type': 'Garden', 'atmosphere': 'Thin', 'diameter': 5500, 'density': 1.0, 'gravity': 0.69, 'hydro': 0.6}
+{'type': 'Garden', 'atmosphere': 'Thin', 'diameter': 4500, 'density': 1.2, 'gravity': 0.68, 'hydro': 0.9}
+{'type': 'Garden', 'atmosphere': 'Thin', 'diameter': 6000, 'density': 0.9, 'gravity': 0.68, 'hydro': 1.0}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 4500, 'density': 1.2, 'gravity': 0.68, 'hydro': 0.4}
+{'type': 'Glacier', 'atmosphere': 'Toxic', 'diameter': 5500, 'density': 1.0, 'gravity': 0.69, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Standard Tainted', 'diameter': 7500, 'density': 0.9, 'gravity': 0.85, 'hydro': 0.7}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 4500, 'density': 1.2, 'gravity': 0.68, 'hydro': 0.8}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 5000, 'density': 1.1, 'gravity': 0.69, 'hydro': 0.6}
+{'type': 'Garden', 'atmosphere': 'Dense Tainted', 'diameter': 8000, 'density': 0.9, 'gravity': 0.91, 'hydro': 0.8}
+{'type': 'Garden', 'atmosphere': 'Thin', 'diameter': 6000, 'density': 1.0, 'gravity': 0.76, 'hydro': 1.0}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 8000, 'density': 0.9, 'gravity': 0.91, 'hydro': 0.4}
+{'type': 'Garden', 'atmosphere': 'Thin', 'diameter': 6000, 'density': 0.9, 'gravity': 0.68, 'hydro': 0.8}
+{'type': 'Garden', 'atmosphere': 'Thin', 'diameter': 5500, 'density': 1.0, 'gravity': 0.69, 'hydro': 0.8}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 5000, 'density': 1.1, 'gravity': 0.69, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Very Thin Tainted', 'diameter': 5500, 'density': 1.1, 'gravity': 0.76, 'hydro': 0.1}
+{'type': 'Desert (Rock)', 'atmosphere': 'Trace', 'diameter': 4000, 'density': 0.7, 'gravity': 0.35, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Thin Tainted', 'diameter': 6000, 'density': 1.0, 'gravity': 0.76, 'hydro': 1.0}
+{'type': 'Barren (Ice)', 'atmosphere': 'None (vacuum).', 'diameter': 1000, 'density': 0.3, 'gravity': 0.04, 'hydro': 0.0}
+{'type': 'Desert (Rock)', 'atmosphere': 'Trace', 'diameter': 4500, 'density': 0.7, 'gravity': 0.4, 'hydro': 0.0}
+{'type': 'Barren (Ice)', 'atmosphere': 'None (vacuum).', 'diameter': 1500, 'density': 0.4, 'gravity': 0.08, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Dense', 'diameter': 7000, 'density': 1.1, 'gravity': 0.97, 'hydro': 0.9}
+{'type': 'Garden', 'atmosphere': 'Very Thin Tainted', 'diameter': 5500, 'density': 0.9, 'gravity': 0.62, 'hydro': 0.9}
+{'type': 'Garden', 'atmosphere': 'Standard Tainted', 'diameter': 7000, 'density': 0.8, 'gravity': 0.71, 'hydro': 0.9}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 6500, 'density': 1.0, 'gravity': 0.82, 'hydro': 0.1}
+{'type': 'Pre-Garden', 'atmosphere': 'Suffocating', 'diameter': 7500, 'density': 0.9, 'gravity': 0.85, 'hydro': 0.4}
+{'type': 'Garden', 'atmosphere': 'Thin', 'diameter': 7000, 'density': 1.0, 'gravity': 0.88, 'hydro': 0.7}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 6500, 'density': 1.0, 'gravity': 0.82, 'hydro': 0.1}
+{'type': 'Garden', 'atmosphere': 'Very Thin Tainted', 'diameter': 4500, 'density': 1.2, 'gravity': 0.68, 'hydro': 0.3}
+{'type': 'Garden', 'atmosphere': 'Thin Tainted', 'diameter': 5500, 'density': 1.1, 'gravity': 0.76, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Standard Tainted', 'diameter': 7500, 'density': 1.0, 'gravity': 0.95, 'hydro': 0.4}
+{'type': 'Garden', 'atmosphere': 'Standard Tainted', 'diameter': 5500, 'density': 0.9, 'gravity': 0.62, 'hydro': 0.3}
+{'type': 'Garden', 'atmosphere': 'Dense', 'diameter': 7500, 'density': 1.0, 'gravity': 0.95, 'hydro': 0.6}
+{'type': 'Garden', 'atmosphere': 'Thin Tainted', 'diameter': 5500, 'density': 0.8, 'gravity': 0.55, 'hydro': 0.6}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 4500, 'density': 1.2, 'gravity': 0.68, 'hydro': 0.4}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 4500, 'density': 1.2, 'gravity': 0.68, 'hydro': 0.3}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 8000, 'density': 0.9, 'gravity': 0.91, 'hydro': 1.0}
+{'type': 'Desert (Rock)', 'atmosphere': 'Trace', 'diameter': 4000, 'density': 0.7, 'gravity': 0.35, 'hydro': 0.0}
+{'type': 'Desert (Ice)', 'atmosphere': 'Corrosive', 'diameter': 3500, 'density': 0.5, 'gravity': 0.22, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Standard Tainted', 'diameter': 7500, 'density': 0.9, 'gravity': 0.85, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Very Thin Tainted', 'diameter': 6000, 'density': 0.8, 'gravity': 0.61, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 7000, 'density': 1.0, 'gravity': 0.88, 'hydro': 0.4}
+{'type': 'Glacier', 'atmosphere': 'Suffocating', 'diameter': 7500, 'density': 0.9, 'gravity': 0.85, 'hydro': 0.0}
+{'type': 'Subgiant', 'atmosphere': 'Corrosive', 'diameter': 10000, 'density': 0.8, 'gravity': 1.01, 'hydro': 0.1}
+{'type': 'Garden', 'atmosphere': 'Dense', 'diameter': 6000, 'density': 0.9, 'gravity': 0.68, 'hydro': 0.6}
+{'type': 'Garden', 'atmosphere': 'Standard Tainted', 'diameter': 6500, 'density': 0.9, 'gravity': 0.74, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Standard Tainted', 'diameter': 7500, 'density': 0.9, 'gravity': 0.85, 'hydro': 0.9}
+{'type': 'Desert (Rock)', 'atmosphere': 'Trace', 'diameter': 3000, 'density': 0.7, 'gravity': 0.26, 'hydro': 0.0}
+{'type': 'Desert (Rock)', 'atmosphere': 'Trace', 'diameter': 4500, 'density': 0.7, 'gravity': 0.4, 'hydro': 0.0}
+{'type': 'Pre-Garden', 'atmosphere': 'Suffocating', 'diameter': 7500, 'density': 0.9, 'gravity': 0.85, 'hydro': 0.4}
+{'type': 'Glacier', 'atmosphere': 'Suffocating', 'diameter': 7000, 'density': 1.0, 'gravity': 0.88, 'hydro': 0.0}
+{'type': 'Glacier', 'atmosphere': 'Suffocating', 'diameter': 4000, 'density': 1.2, 'gravity': 0.61, 'hydro': 0.0}
+{'type': 'Barren (Rock)', 'atmosphere': 'None (vacuum).', 'diameter': 1000, 'density': 0.6, 'gravity': 0.08, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 6500, 'density': 0.9, 'gravity': 0.74, 'hydro': 0.4}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 5500, 'density': 1.1, 'gravity': 0.76, 'hydro': 0.8}
+{'type': 'Garden', 'atmosphere': 'Thin', 'diameter': 6000, 'density': 1.0, 'gravity': 0.76, 'hydro': 0.6}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 6500, 'density': 1.0, 'gravity': 0.82, 'hydro': 0.7}
+{'type': 'Glacier', 'atmosphere': 'Suffocating', 'diameter': 5500, 'density': 0.9, 'gravity': 0.62, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Dense', 'diameter': 7000, 'density': 1.0, 'gravity': 0.88, 'hydro': 0.9}
+{'type': 'Desert (Rock)', 'atmosphere': 'Trace', 'diameter': 4000, 'density': 0.7, 'gravity': 0.35, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Very Dense', 'diameter': 9000, 'density': 0.8, 'gravity': 0.91, 'hydro': 0.6}
+{'type': 'Pre-Garden', 'atmosphere': 'Suffocating', 'diameter': 7000, 'density': 0.9, 'gravity': 0.79, 'hydro': 0.4}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 4500, 'density': 1.2, 'gravity': 0.68, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Thin Tainted', 'diameter': 6000, 'density': 1.1, 'gravity': 0.83, 'hydro': 0.6}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 6500, 'density': 0.9, 'gravity': 0.74, 'hydro': 0.6}
+{'type': 'Garden', 'atmosphere': 'Standard Tainted', 'diameter': 7000, 'density': 1.0, 'gravity': 0.88, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Dense', 'diameter': 7500, 'density': 1.0, 'gravity': 0.95, 'hydro': 0.8}
+{'type': 'Glacier', 'atmosphere': 'Toxic', 'diameter': 7500, 'density': 0.8, 'gravity': 0.76, 'hydro': 0.2}
+{'type': 'Desert (Rock)', 'atmosphere': 'Trace', 'diameter': 5000, 'density': 0.6, 'gravity': 0.38, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 4500, 'density': 1.2, 'gravity': 0.68, 'hydro': 0.5}
+{'type': 'Garden', 'atmosphere': 'Very Dense Tainted', 'diameter': 7000, 'density': 0.9, 'gravity': 0.79, 'hydro': 0.5}
+{'type': 'Glacier', 'atmosphere': 'Suffocating', 'diameter': 6000, 'density': 1.0, 'gravity': 0.76, 'hydro': 0.1}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 5500, 'density': 0.9, 'gravity': 0.62, 'hydro': 0.3}
+{'type': 'Garden', 'atmosphere': 'Dense Tainted', 'diameter': 7000, 'density': 0.8, 'gravity': 0.71, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Standard', 'diameter': 5000, 'density': 1.2, 'gravity': 0.76, 'hydro': 0.1}
+{'type': 'Garden', 'atmosphere': 'Thin Tainted', 'diameter': 6500, 'density': 1.0, 'gravity': 0.82, 'hydro': 0.1}
+{'type': 'Garden', 'atmosphere': 'Very Thin', 'diameter': 6000, 'density': 1.0, 'gravity': 0.76, 'hydro': 0.3}
+{'type': 'Garden', 'atmosphere': 'Dense', 'diameter': 7000, 'density': 1.1, 'gravity': 0.97, 'hydro': 0.6}
+{'type': 'Garden', 'atmosphere': 'Very Thin Tainted', 'diameter': 6000, 'density': 1.0, 'gravity': 0.76, 'hydro': 0.1}
+{'type': 'Desert (Rock)', 'atmosphere': 'Trace', 'diameter': 4000, 'density': 0.7, 'gravity': 0.35, 'hydro': 0.0}
+{'type': 'Garden', 'atmosphere': 'Dense Tainted', 'diameter': 6000, 'density': 0.8, 'gravity': 0.61, 'hydro': 0.3}
+{'type': 'Asteroid Belt', 'atmosphere': 'None (vacuum).', 'diameter': 'None', 'density': 'None', 'gravity': 'None', 'hydro': 0.0}
+{'type': 'Desert (Rock)', 'atmosphere': 'Trace', 'diameter': 4000, 'density': 1.0, 'gravity': 0.5, 'hydro': 0.0}
