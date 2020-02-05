@@ -517,3 +517,15 @@ def hydrographics(planet_type):
             return {"hydro": 0.0}
         else:
             return {"hydro": round(water, 1)}
+
+def climate(planet_type):
+    if (planet_type == "Asteroid Belt"):
+        result = roll_dee_six(3)
+        if result <= 6:
+            return {'climate': "Infernal"}
+        else:
+             return {'climate': 'frozen'}
+    elif (planet_type == "Barren (Ice)" or planet_type == "Desert (Ice)"
+        or planet_type == "Glacier" or planet_type == Subgiant):
+        return {'climate': 'Frozen'}
+    
