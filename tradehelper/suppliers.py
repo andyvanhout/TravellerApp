@@ -31,6 +31,7 @@ def goods_available():
         print(item)
 
 def random_goods():
+# to do: update this to use planet population to determine number of goods available
     random_goods = sum_roll_dee_six(1)
     print(f'\nThis supplier has {random_goods} available. They are:')
     for number in range(random_goods):
