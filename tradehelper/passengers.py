@@ -74,6 +74,7 @@ def red_zone():
     else:
         return 0
 
+broker_effect = broker_effect()
 steward_modifier = steward_skill()
 population_modifier_origin = world_population()
 population_modifier_destination = world_population()
@@ -84,7 +85,7 @@ amber_modifier_destination = amber_zone()
 red_modifier_origin = red_zone()
 red_modifier_destination = red_zone()
 
-passage.highpassage(steward_skill, population_modifier, starport_modifier, amber_modifier, red_modifier)
-passage.mediumpassage(steward_skill, population_modifier, starport_modifier, amber_modifier, red_modifier)
-passage.basicpassage(steward_skill, population_modifier, starport_modifier, amber_modifier, red_modifier)
-passage.lowpassage(steward_skill, population_modifier, starport_modifier, amber_modifier, red_modifier)
+passage.highpassage(broker_effect, steward_modifier, population_modifier_origin, starport_modifier_origin, amber_modifier_origin, red_modifier_origin, population_modifier_destination, starport_modifier_destination, amber_modifier_destination, red_modifier_destination)
+passage.mediumpassage(broker_effect, steward_modifier, population_modifier_origin, starport_modifier_origin, amber_modifier_origin, red_modifier_origin, population_modifier_destination, starport_modifier_destination, amber_modifier_destination, red_modifier_destination)
+passage.basicpassage(broker_effect, steward_modifier, population_modifier_origin, starport_modifier_origin, amber_modifier_origin, red_modifier_origin, population_modifier_destination, starport_modifier_destination, amber_modifier_destination, red_modifier_destination)
+passage.lowpassage(broker_effect, steward_modifier, population_modifier_origin, starport_modifier_origin, amber_modifier_origin, red_modifier_origin, population_modifier_destination, starport_modifier_destination, amber_modifier_destination, red_modifier_destination)
