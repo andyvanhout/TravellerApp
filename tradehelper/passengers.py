@@ -1,4 +1,19 @@
 import modules.passage as passage
+import random as random
+
+def broker_effect():
+    print("Input total DM for broker (Skill and characteristic DM)")
+    broker_modifier = int(input(">"))
+    broker_roll = random.randint(1, 6) + random.randint(1, 6) + broker_modifier
+    broker_target = 8
+    
+    if broker_roll >= broker_target:
+        broker_effect = broker_roll - broker_target
+    else:
+        broker_effect = (broker_target - broker_roll) * -1
+    print(f'Broker Effect is {broker_effect}')
+    print("--")
+    return broker_effect
 
 def steward_skill():
     print("Input highest Steward skill on ship")
@@ -59,11 +74,15 @@ def red_zone():
     else:
         return 0
 
-steward_skill = steward_skill()
-population_modifier = world_population()
-starport_modifier = starport()
-amber_modifier = amber_zone()
-red_modifier = red_zone()
+steward_modifier = steward_skill()
+population_modifier_origin = world_population()
+population_modifier_destination = world_population()
+starport_modifier_origin = starport()
+starport_modifier_destination = starport()
+amber_modifier_origin = amber_zone()
+amber_modifier_destination = amber_zone()
+red_modifier_origin = red_zone()
+red_modifier_destination = red_zone()
 
 passage.highpassage(steward_skill, population_modifier, starport_modifier, amber_modifier, red_modifier)
 passage.mediumpassage(steward_skill, population_modifier, starport_modifier, amber_modifier, red_modifier)
